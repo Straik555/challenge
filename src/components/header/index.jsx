@@ -62,4 +62,4 @@ BannerText.propTypes = {
 
 BannerImg.propTypes = {
     img: PropTypes.element
-}
+};
