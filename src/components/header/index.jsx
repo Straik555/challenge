@@ -52,14 +52,3 @@ const Header = () => {
 }
 export default Header;
 
-BannerContainer.propTypes = {
-    backgroundColor: PropTypes.string
-}
-
-BannerText.propTypes = {
-    color: PropTypes.string
-};
-
-BannerImg.propTypes = {
-    img: PropTypes.element
-};
