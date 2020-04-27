@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import Img from '../../assets/img/header/react.svg'
 import style from '../style';
+import PropTypes from 'prop-types';
 
 const BannerContainer = styled.div`
   height: 367px;
@@ -50,3 +51,15 @@ const Header = () => {
     )
 }
 export default Header;
+
+BannerContainer.propTypes = {
+    backgroundColor: PropTypes.string
+}
+
+BannerText.propTypes = {
+    color: PropTypes.string
+};
+
+BannerImg.propTypes = {
+    img: PropTypes.element
+}
