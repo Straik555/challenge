@@ -101,8 +101,13 @@ export default class PersonstoreService {
         }
     ];
     getPerson(){
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {          
             setTimeout(() => {
+                //  if(Math.random() > 0.75){
+                //     reject(new Error('Something bad happened'))
+                // } else { 
+                //     resolve(this.data);
+                // }
                 resolve(this.data)
             }, 700)
         })
