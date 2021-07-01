@@ -18,6 +18,7 @@ class SelectedItem extends Component{
         if(peopleId !== undefined && peopleId.length !== 0){
             return (
                 <SelectedList
+                    key={peopleId.id}
                     age={peopleId.age}
                     animal={peopleId.animal}
                     image={peopleId.image}
@@ -32,6 +33,7 @@ class SelectedItem extends Component{
             return x.map(i => {
                 return (
                     <SelectedList
+                        key={i.id}
                         age={i.age}
                         animal={i.animal}
                         image={i.image}
